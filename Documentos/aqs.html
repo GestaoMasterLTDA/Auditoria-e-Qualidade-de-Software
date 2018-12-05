@@ -24,40 +24,170 @@
         <section id="projeto">
             <hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
             <br>
-                Elaboração de testes de validações do aplicativo web Loja Virtual.<br>
+                <div class="projetoSubTitulo"><b>•	<i>INTRODUÇÃO</i></b></div>
+                <section>
+                    <p>No mundo atual, a busca de mais melhorias nos softwares, os desenvolvedores fazem muitos testes nos seus códigos. Na linguagem Java, esses testes podem serem feitos com framework open JUnit (testes nos métodos) e JWebUnit (testes em plataforma web).</p>
+                    <p>O JUnit pode ser verificado se cada método de uma classe funciona da forma esperada, exibindo possíveis erros ou falhas podendo ser utilizado tanto para a execução de baterias de testes como para extensão.</p>
+                    <p>O JWebUnit envolve estruturas de teste existentes, como HtmlUnit e Selenium, com uma interface de teste simples e unificada para permitir que você teste rapidamente a exatidão de seus aplicativos da Web.</p>
+                    <p>A vantagem de fazer testes é saber que está atendendo os requisitos especificados no próprio teste. Você pode modificar os códigos normais e rodar o JUnit/JWebUnit para saber se suas modificações não comprometeram o resultado modificado.</p>
+            </section>
             <br>
-            <div class="projetoSubTitulo"><b>•	<i>TESTES JUnit/JWebUnit</i></b></div>
+            <div class="projetoSubTitulo"><b>•	<i>IMPLEMENTANDO NO PROJETO</i></b></div>
             <section>
-                <div class="projetoPlano01"/>
-                <br>
-                Completar com caracteres arquivos para visualização dos produtos<br>
-                <img src="aqs_imagem01.png" width = 1100px height = 400px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
-                Validação do login, utilizando e-mail/senha<br>
-                <img src="aqs_imagem02.png" width = 1100px height = 586px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
-                Tela inicial<br>
-                <img src="aqs_imagem03.png" width = 1100px height = 396px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
-                Tela de cadastro do cliente<br>
-                <img src="aqs_imagem04.png" width = 1100px height = 396px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
-                Tela de pedidos de cliente logado<br>
-                <img src="aqs_imagem05.png" width = 1100px height = 422px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
-                Validação do logout<br>
-                <img src="aqs_imagem06.png" width = 1100px height = 466px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
-                Tela SOBRE<br>
-                <img src="aqs_imagem07.png" width = 1100px height = 404px border = 0px alt = 0px vspace = 0px hspace = 0px>
-                <br>
-                <br>
+                <div class="projetoPlano01">
+                    <OL type="1">
+                        <li><b>Configuração (IDE Eclipse versão Oxygen.2 Release (4.7.2))</b></li>
+                            Para utilizar o JUnit/JWebUnit, não é muito mais que configurar os .jar na “path” de execução e compilação.<br>
+                            <div class="projetoPlano01">
+                                Faça os downloads nos seguintes endereços:<br>
+                                <div class="projetoPlano01">
+                                    <b>•	JUnit:</b>
+                                    <div class="projetoPlano01">
+                                        https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/5.3.0
+                                    </div>
+                                    <b>•	JWebUnit:</b>
+                                    <div class="projetoPlano01">
+                                        https://sourceforge.net/projects/jwebunit/files/
+                                    </div>
+                                </div>
+                            </div>
+                            Após fazer os downloads, faça a instalação nas PROPRIEDADES (PROPERTIES) do projeto conforme figura abaixo:<br>          <img src="aqs_instalar01.png" width = 544px height = 583px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                            <br>
+                        <br>
+                        
+                        <li><b>Obtendo <i>DEPENDÊNCIAS</i> no aplicativo</b></li>
+                            Podemos obter as dependências necessárias declarando-as em nosso arquivo pom.xml de seguinte forma:<br>
+                            <div class="projetoPlano01">
+                                <b>•	JUnit:</b><br>
+                                   <img src="aqs_instalar02.png" width = 400px height = 111px border = 0px alt = 0px vspace = 0px hspace = 0px><br>
+                                <b>•	JWebUnit:</b><br>
+                                   <img src="aqs_instalar03.png" width = 400px height = 111px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                            </div>
+                        <br>
+	                     Após incluir no arquivo pom.xml, deve-se atualizar o projeto Maven teclando Alt-F5 ou teclando botão inverso do mouse e acionar as opções Maven->Update Project.
+                    </OL>
+                </div>
+            </section>
+            <br>
+            <div class="projetoSubTitulo"><b>•	<i>TESTES DE CASOS</i></b></div>
+            <section>
+                <div class="projetoPlano01">
+                    <OL type="1">
+                        <li><b>TC01 - Completar variáveis</b></li>
+                            <div class="projetoPlano01">
+                                <b>•	Descrição:</b>
+                                <div class="projetoPlano01">
+                                    Retornar valores, conforme parâmetros, para composição da variável.<br>
+                                    Usado para compor o nome do arquivo de imagem conforme código do produto.
+                                </div>
+                                <b>•	Pré-condição</b>
+                                <div class="projetoPlano01">
+                                    Nenhuma.
+                                </div>
+                                <b>•	Pós-condição</b>
+                                <div class="projetoPlano01">
+                                    Retornar valores para análise de equidade.
+                                </div>
+                                <b>•	Dados</b>
+                                <div class="projetoPlano01">
+                                    Informar <i>string</i> que será composta, colocar <i>string</i> a ser incluída, tamanho máximo para retorno e sua composição será à direta ou à esquerda..
+                                </div>
+                                <b>•	Código fonte</b>
+                                <div class="projetoPlano01">
+                                    <img src="aqs_imagem01.png" width = 900px height = 400px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                                </div>
+                            </div>
+                        <br>
+                        <li><b>TC02 - Validação do login</b></li>
+                            <div class="projetoPlano01">
+                                <b>•	Descrição:</b>
+                                <div class="projetoPlano01">
+                                    Validação do e-mail e senha para acesso <i>Área Administrador</i>.<br>
+                                </div>
+                                <b>•	Pré-condição</b>
+                                <div class="projetoPlano01">
+                                    Usário informa e-mail e senha válidos e com acesso <i>Administrativo</i>.
+                                </div>
+                                <b>•	Pós-condição</b>
+                                <div class="projetoPlano01">
+                                    Acessa <i>Área Administrativa</i>.
+                                </div>
+                                <b>•	Dados</b>
+                                <div class="projetoPlano01">
+                                    e-Mail e senha.
+                                </div>
+                                <b>•	Código fonte</b>
+                                <div class="projetoPlano01">
+                                    <img src="aqs_imagem02.png" width = 900px height = 484px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                                </div>
+                            </div>
+                        <br>
+                        <li><b>TC03 - Tela inicial</b></li>
+                            <div class="projetoPlano01">
+                                <b>•	Descrição:</b>
+                                <div class="projetoPlano01">
+                                    Verifica se tela inicial está disponível.<br>
+                                </div>
+                                <b>•	Pós-condição</b>
+                                <div class="projetoPlano01">
+                                    Retorna válido se tela acessada.
+                                </div>
+                                <b>•	Código fonte</b>
+                                <div class="projetoPlano01">
+                                    <img src="aqs_imagem03.png" width = 900px height = 396px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                                </div>
+                            </div>
+                        <br>
+                        <li><b>TC04 - Tela de cadastro de cliente</b></li>
+                            <div class="projetoPlano01">
+                                <b>•	Descrição:</b>
+                                <div class="projetoPlano01">
+                                    Acessar tela de cadastro de cliente.<br>
+                                </div>
+                                <b>•	Pós-condição</b>
+                                <div class="projetoPlano01">
+                                    Retorna válido se tela acessada.
+                                </div>
+                                <b>•	Código fonte</b>
+                                <div class="projetoPlano01">
+                                    <img src="aqs_imagem04.png" width = 900px height = 396px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                                </div>
+                            </div>
+                        <br>
+                        <li><b>TC05 - Pedidos de clientes</b></li>
+                            <div class="projetoPlano01">
+                                <b>•	Descrição:</b>
+                                <div class="projetoPlano01">
+                                    Acessa a <i>Área de cliente</i> para verificação de pedidos.<br>
+                                </div>
+                                <b>•	Pós-condição</b>
+                                <div class="projetoPlano01">
+                                    Retorna <i>Área de cliente</i> se usário <i>logado</i> ou tela de <i>Login</i>.
+                                </div>
+                                <b>•	Código fonte</b>
+                                <div class="projetoPlano01">
+                                    <img src="aqs_imagem05.png" width = 900px height = 422px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                                </div>
+                            </div>
+                        <br>
+                        <li><b>TC06 - Validação do logout</b></li>
+                            <div class="projetoPlano01">
+                                <b>•	Descrição:</b>
+                                <div class="projetoPlano01">
+                                    Validação da forma de efetuar <i>logout</i>.<br>
+                                </div>
+                                <b>•	Pós-condição</b>
+                                <div class="projetoPlano01">
+                                    Retorna informação <i>Usuário não logado</i>.
+                                </div>
+                                <b>•	Código fonte</b>
+                                <div class="projetoPlano01">
+                                    <img src="aqs_imagem06.png" width = 900px height = 466px border = 0px alt = 0px vspace = 0px hspace = 0px>
+                                </div>
+                            </div>
+                        <br>
+                    </OL>
+                </div>
             </section>
             <div class="projetoSubTitulo"><b>•	<i>Controle de Versão - GitHub</i></b></div>
                 <div class="projetoPlano01"/>
