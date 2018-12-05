@@ -1,0 +1,175 @@
+body {
+	margin: 0; /* Sem margens */
+	padding: 0;/* Sem espaçamentos */
+	border: 0; /* Sem bordas */
+	background-color: white; /* Cor de fundo */
+	color: black; /* Cor de texto */
+	font-family: "Source Sans Pro", sans-serif; /* Fonte do texto títular e fonte reserva */
+	font-size: 150%; /* Tamanho de fonte */
+	font-weight: 200; /* Espessura de texto */
+	line-height: 1.50em; /* Espaçamento de texto */
+}
+
+#sobre {
+	padding: 0cm 3cm 2cm 3cm;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+    color:black;/*cor do texto*/
+	text-align: justify; /* Texto alinhado justificado */
+	font-size: 0.7cm;/* tamanho da letra*/
+    font-family: "Arial", sans-serif; /* Fonte do texto títular e fonte reserva */
+	text-indent: 4cm; /* distancia da margem(tipo tap)*/
+	
+}
+
+#sobre .sobreTitulo{
+	color:Black;/*cor do texto*/
+	text-align:center; /* Texto alinhado justificado */
+	font-size: 35px;/* tamanho da letra*/
+    font-family: "Arial", sans-serif; /* Fonte do texto títular e fonte reserva */
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+
+#sobre .sobreSubTitulo{
+	color:Black;/*cor do texto*/
+	text-align:right; /* Texto alinhado justificado */
+	font-size: 0.4cm;/* tamanho da letra*/
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+
+/* Elemento com id="titulo" */
+#titulo{
+	background-image: url('aqs_capa.jpg'); /* Imagem de fundo */ 
+	background-size: 100%; /* Para a imagem cobrir o fundo o quanto for possível */
+	text-align: center; /* Alinhamento do texto ao centro */
+	min-height: 70vh; /* Tamanho mínimo para cobrir a tela inteira na vertical*/
+}    
+    
+/* Todos os elementos com class=titulo", dentro do elemento id="sub" */
+#titulo .sub{
+	padding-top: 2%; /* Espaçamento de 13% do top */
+}
+
+/* Todos os H1 dentro do elemento com id="titulo" */
+#titulo h1 {
+    font-size: 2cm; /* Tamanho da fonte do h1 será de 2 centimetros*/
+    padding: 0em 0.5em 0em 0.25em; /* Espaçamento: top=0em right=0.5em bottom=0em left=0.25em */
+    color: black; /* Cor do texto*/
+    font-weight: 700; /* Espessura da fonte, quanto mais, mais grossa será a fonte */
+    line-height: 70px; /* Define 70px para o tamanho da linha dessa tag h1 */
+    text-transform: uppercase; /* Transforma todas as letras do texto em maiúsculas */
+}
+
+#titulo nav { /*Onde esta escrito Projeto Integrador*/
+	background-color: black; /* Cor de fundo */
+    width: 100%; /* Largura 100% do tamanho da tela */
+    font-weight: 600; /* Espessura do texto */
+    color: white; /* Cor do texto */
+}
+
+/* Elemento com id="intro" */
+#projeto {
+	padding: 0cm 3cm 2cm 3cm;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+    color:black;/*cor do texto*/
+	text-align: justify; /* Texto alinhado justificado */
+	font-size: 0.7cm;/* tamanho da letra*/
+    font-family: "Arial", sans-serif; /* Fonte do texto títular e fonte reserva */
+	text-indent: 4cm; /* distancia da margem(tipo tap)*/
+	
+}
+
+#projeto .projetoTitulo{
+	color:Black;/*cor do texto*/
+	text-align:center; /* Texto alinhado justificado */
+	font-size: 35px;/* tamanho da letra*/
+    font-family: "Arial", sans-serif; /* Fonte do texto títular e fonte reserva */
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+
+#projeto .projetoSubTitulo{
+	color:Black;/*cor do texto*/
+	text-align:left; /* Texto alinhado justificado */
+	font-size: 0.7cm;/* tamanho da letra*/
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+
+#projeto .projetoPlano01{
+	padding: 0cm 0cm 0cm 50px;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+	color:Black;/*cor do texto*/
+	text-align:left; /* Texto alinhado justificado */
+	font-size: 0.6cm;/* tamanho da letra*/
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+
+#projeto .projetoPlano02{
+	padding: 0cm 0cm 0cm 70px;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+	color:Black;/*cor do texto*/
+	text-align: justify; /* Texto alinhado justificado */
+	font-size: 0.6cm;/* tamanho da letra*/
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+#projeto .projetoPlano03{
+	padding: 0cm 0cm 0cm 90px;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+	color:Black;/*cor do texto*/
+	text-align:left; /* Texto alinhado justificado */
+	font-size: 0.6cm;/* tamanho da letra*/
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+#projeto .projetoPlano04{
+	padding: 0cm 0cm 0cm 110px;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+	color:Black;/*cor do texto*/
+	text-align:left; /* Texto alinhado justificado */
+	font-size: 0.6cm;/* tamanho da letra*/
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	
+}
+
+
+#projeto .citacao{
+	padding: 0cm 0cm 0cm 20cm;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+	color:Black;/*cor do texto*/
+	font-size: 0.3cm;/* tamanho da letra*/
+    font-family: "Arial", sans-serif; /* Fonte do texto títular e fonte reserva */
+    text-align:justify; /* Texto alinhado justificado */
+	text-indent: 0px; /* distancia da margem(tipo tap)*/	
+	line-height: 1em; /* Espaçamento de texto */    
+}
+
+#projeto .referencia{
+	padding: 0cm 0cm 0cm 0px;   /* Margem superior  Margem Direita   Margem Inferior   Margem Esquerda */
+	color:Black;/*cor do texto*/
+	text-align:left; /* Texto alinhado justificado */
+	font-size: 0.6cm;/* tamanho da letra*/
+	text-indent: 10px; /* distancia da margem(tipo tap)*/	
+	line-height: 1.0em; /* Espaçamento de texto */
+}
+	
+/* Elementos com class=button */
+#button {
+	border-radius: 1px; /* Borda com 4 pixel de arredondamento */
+	display: block; /* Define o tipo de caixa de renderização usada pelo elemento.  */
+	font-weight: 400; /* Espessura do texto */
+	padding: 1em; /* Espaçamento de 1em para top, right, bottom e left */
+	text-align: center; /* Texto alinhado ao centro */
+	text-transform: uppercase; /* Trasforma todas as letras do texto em maiúsculas */
+	letter-spacing: 0.325em; /* Espaçamento entre as letras do texto */
+	font-size: 0.725em; /* Tamanho da fonte */
+	background-color: transparent; /* Cor de fundo trasparente */
+	border: 2px solid #9a9a9a; /* Borda do botão espessura=2px estilo=solid e cor=#666666 */
+	color: #9a9a9a; /* Cor do texto em hexadecimal */
+}	
+	
+	
+/* Elemento com id="footer" */
+#footer {	
+ 	margin: 0 auto 0 auto; /* Margem: top=4em right=auto bottom=0 left=auto */
+	width: 50em; /* Largura */
+	text-align: center; /* Texto alinhado ao centro */
+	font-size: 0.6em; /* Tamanho da fonte */
+	font-weight: 600;
+}
